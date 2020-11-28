@@ -1,0 +1,19 @@
+{
+    "init": "content",
+    "iterations": 4000,
+    "content": "1c_resized.jpg",
+    "style": "1s_resized.jpg",
+    "content_weight": 1,
+    "style_weight": 100,
+    "regularization_weight": 10000,
+    "nima_weight": 100000,
+    "semantic_thresh": 0.8,
+    "similarity_metric": "li",
+    "load_segmentation": false,
+    "adam": {
+        "learning_rate": 1.0,
+        "beta1": 0.9,
+        "beta2": 0.999,
+        "epsilon": 1e-08
+    }
+}
