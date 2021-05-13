@@ -1,0 +1,301 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+ no time accumulated
+
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+  0.00      0.00     0.00    23404     0.00     0.00  boost::detail::sp_counted_impl_pd<unsigned char*, boost::checked_array_deleter<unsigned char> >::dispose()
+  0.00      0.00     0.00    13923     0.00     0.00  boost::detail::sp_counted_base::release()
+  0.00      0.00     0.00     8358     0.00     0.00  frame_dummy
+  0.00      0.00     0.00     2320     0.00     0.00  boost::detail::sp_counted_impl_pd<nav_msgs::Odometry_<std::allocator<void> >*, boost::detail::sp_ms_deleter<nav_msgs::Odometry_<std::allocator<void> > > >::get_untyped_deleter()
+  0.00      0.00     0.00     2320     0.00     0.00  boost::detail::sp_counted_impl_pd<nav_msgs::Odometry_<std::allocator<void> >*, boost::detail::sp_ms_deleter<nav_msgs::Odometry_<std::allocator<void> > > >::dispose()
+  0.00      0.00     0.00     2320     0.00     0.00  boost::detail::function::function_obj_invoker0<ros::DefaultMessageCreator<nav_msgs::Odometry_<std::allocator<void> > >, boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > > >::invoke(boost::detail::function::function_buffer&)
+  0.00      0.00     0.00     2320     0.00     0.00  boost::detail::function::void_function_obj_invoker1<boost::_bi::bind_t<void, boost::_mfi::mf1<void, TransformFusion, boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&>, boost::_bi::list2<boost::_bi::value<TransformFusion*>, boost::arg<1> > >, void, boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&>::invoke(boost::detail::function::function_buffer&, boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&)
+  0.00      0.00     0.00     2320     0.00     0.00  boost::detail::function::void_function_obj_invoker1<boost::function<void (boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&)>, void, boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> >::invoke(boost::detail::function::function_buffer&, boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const>)
+  0.00      0.00     0.00     1860     0.00     0.00  boost::detail::function::has_empty_target(...)
+  0.00      0.00     0.00     1856     0.00     0.00  TransformFusion::laserOdometryHandler(boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&)
+  0.00      0.00     0.00     1856     0.00     0.00  TransformFusion::transformAssociateToMap()
+  0.00      0.00     0.00     1856     0.00     0.00  void ros::Publisher::publish<nav_msgs::Odometry_<std::allocator<void> > >(nav_msgs::Odometry_<std::allocator<void> > const&) const
+  0.00      0.00     0.00      464     0.00     0.00  TransformFusion::odomAftMappedHandler(boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&)
+  0.00      0.00     0.00       19     0.00     0.00  std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::_M_erase(std::_Rb_tree_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >*)
+  0.00      0.00     0.00        6     0.00     0.00  boost::detail::function::functor_manager<boost::function<void (boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&)> >::manage(boost::detail::function::function_buffer const&, boost::detail::function::function_buffer&, boost::detail::function::functor_manager_operation_type)
+  0.00      0.00     0.00        4     0.00     0.00  boost::function1<void, ros::SingleSubscriberPublisher const&>::move_assign(boost::function1<void, ros::SingleSubscriberPublisher const&>&)
+  0.00      0.00     0.00        3     0.00     0.00  std::_Rb_tree<pcl::SacModel, std::pair<pcl::SacModel const, unsigned int>, std::_Select1st<std::pair<pcl::SacModel const, unsigned int> >, std::less<pcl::SacModel>, std::allocator<std::pair<pcl::SacModel const, unsigned int> > >::_M_erase(std::_Rb_tree_node<std::pair<pcl::SacModel const, unsigned int> >*)
+  0.00      0.00     0.00        2     0.00     0.00  ros::Subscriber ros::NodeHandle::subscribe<nav_msgs::Odometry_<std::allocator<void> >, TransformFusion>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int, void (TransformFusion::*)(boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&), TransformFusion*, ros::TransportHints const&)
+  0.00      0.00     0.00        2     0.00     0.00  ros::SubscriptionCallbackHelperT<boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&, void>::~SubscriptionCallbackHelperT()
+  0.00      0.00     0.00        2     0.00     0.00  boost::detail::sp_if_not_array<ros::SubscriptionCallbackHelperT<boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&, void> >::type boost::make_shared<ros::SubscriptionCallbackHelperT<boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&, void>, boost::function<void (boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&)> const&, boost::function<boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > > ()> const&>(boost::function<void (boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&)> const&, boost::function<boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > > ()> const&)
+  0.00      0.00     0.00        2     0.00     0.00  boost::exception_detail::bad_alloc_::~bad_alloc_()
+  0.00      0.00     0.00        2     0.00     0.00  boost::exception_detail::bad_exception_::~bad_exception_()
+  0.00      0.00     0.00        2     0.00     0.00  boost::exception_detail::copy_boost_exception(boost::exception*, boost::exception const*)
+  0.00      0.00     0.00        2     0.00     0.00  boost::detail::sp_counted_impl_pd<ros::SubscriptionCallbackHelperT<boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&, void>*, boost::detail::sp_ms_deleter<ros::SubscriptionCallbackHelperT<boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&, void> > >::get_untyped_deleter()
+  0.00      0.00     0.00        2     0.00     0.00  boost::function<void (ros::SingleSubscriberPublisher const&)>::operator=(boost::function<void (ros::SingleSubscriberPublisher const&)> const&)
+  0.00      0.00     0.00        2     0.00     0.00  std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::operator=(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&)
+  0.00      0.00     0.00        2     0.00     0.00  std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::operator=(std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)
+  0.00      0.00     0.00        1     0.00     0.00  ros::AdvertiseOptions::~AdvertiseOptions()
+  0.00      0.00     0.00        1     0.00     0.00  main
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) no time propagated
+
+index % time    self  children    called     name
+                0.00    0.00       3/8358        std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::operator=(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&) [32]
+                0.00    0.00       3/8358        TransformFusion::TransformFusion() [35]
+                0.00    0.00    3712/8358        void ros::Publisher::publish<nav_msgs::Odometry_<std::allocator<void> > >(nav_msgs::Odometry_<std::allocator<void> > const&) const [18]
+                0.00    0.00    4640/8358        ros::SubscriptionCallbackHelperT<boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&, void>::deserialize(ros::SubscriptionCallbackHelperDeserializeParams const&) [43]
+[1]      0.0    0.00    0.00    8358         frame_dummy [1]
+                0.00    0.00   23404/23404       boost::detail::sp_counted_impl_pd<unsigned char*, boost::checked_array_deleter<unsigned char> >::dispose() [8]
+                0.00    0.00    2320/2320        boost::detail::sp_counted_impl_pd<nav_msgs::Odometry_<std::allocator<void> >*, boost::detail::sp_ms_deleter<nav_msgs::Odometry_<std::allocator<void> > > >::dispose() [11]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [169]
+[2]      0.0    0.00    0.00       1         main [2]
+-----------------------------------------------
+                0.00    0.00   23404/23404       frame_dummy [1]
+[8]      0.0    0.00    0.00   23404         boost::detail::sp_counted_impl_pd<unsigned char*, boost::checked_array_deleter<unsigned char> >::dispose() [8]
+-----------------------------------------------
+                0.00    0.00       1/13923       boost::exception_ptr boost::exception_detail::get_static_exception_object<boost::exception_detail::bad_alloc_>() [65]
+                0.00    0.00       1/13923       boost::exception_ptr boost::exception_detail::get_static_exception_object<boost::exception_detail::bad_exception_>() [66]
+                0.00    0.00       2/13923       boost::detail::sp_if_not_array<ros::SubscriptionCallbackHelperT<boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&, void> >::type boost::make_shared<ros::SubscriptionCallbackHelperT<boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&, void>, boost::function<void (boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&)> const&, boost::function<boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > > ()> const&>(boost::function<void (boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&)> const&, boost::function<boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > > ()> const&) [26]
+                0.00    0.00       2/13923       ros::Subscriber ros::NodeHandle::subscribe<nav_msgs::Odometry_<std::allocator<void> >, TransformFusion>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int, void (TransformFusion::*)(boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&), TransformFusion*, ros::TransportHints const&) [24]
+                0.00    0.00    6958/13923       ros::SubscriptionCallbackHelperT<boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&, void>::deserialize(ros::SubscriptionCallbackHelperDeserializeParams const&) [43]
+                0.00    0.00    6959/13923       ros::SubscriptionCallbackHelperT<boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&, void>::call(ros::SubscriptionCallbackHelperCallParams&) [45]
+[9]      0.0    0.00    0.00   13923         boost::detail::sp_counted_base::release() [9]
+-----------------------------------------------
+                0.00    0.00    2320/2320        boost::detail::function::function_obj_invoker0<ros::DefaultMessageCreator<nav_msgs::Odometry_<std::allocator<void> > >, boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > > >::invoke(boost::detail::function::function_buffer&) [12]
+[10]     0.0    0.00    0.00    2320         boost::detail::sp_counted_impl_pd<nav_msgs::Odometry_<std::allocator<void> >*, boost::detail::sp_ms_deleter<nav_msgs::Odometry_<std::allocator<void> > > >::get_untyped_deleter() [10]
+-----------------------------------------------
+                0.00    0.00    2320/2320        frame_dummy [1]
+[11]     0.0    0.00    0.00    2320         boost::detail::sp_counted_impl_pd<nav_msgs::Odometry_<std::allocator<void> >*, boost::detail::sp_ms_deleter<nav_msgs::Odometry_<std::allocator<void> > > >::dispose() [11]
+-----------------------------------------------
+                0.00    0.00    2320/2320        ros::SubscriptionCallbackHelperT<boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&, void>::deserialize(ros::SubscriptionCallbackHelperDeserializeParams const&) [43]
+[12]     0.0    0.00    0.00    2320         boost::detail::function::function_obj_invoker0<ros::DefaultMessageCreator<nav_msgs::Odometry_<std::allocator<void> > >, boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > > >::invoke(boost::detail::function::function_buffer&) [12]
+                0.00    0.00    2320/2320        boost::detail::sp_counted_impl_pd<nav_msgs::Odometry_<std::allocator<void> >*, boost::detail::sp_ms_deleter<nav_msgs::Odometry_<std::allocator<void> > > >::get_untyped_deleter() [10]
+-----------------------------------------------
+                0.00    0.00    2320/2320        boost::detail::function::void_function_obj_invoker1<boost::function<void (boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&)>, void, boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> >::invoke(boost::detail::function::function_buffer&, boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const>) [14]
+[13]     0.0    0.00    0.00    2320         boost::detail::function::void_function_obj_invoker1<boost::_bi::bind_t<void, boost::_mfi::mf1<void, TransformFusion, boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&>, boost::_bi::list2<boost::_bi::value<TransformFusion*>, boost::arg<1> > >, void, boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&>::invoke(boost::detail::function::function_buffer&, boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&) [13]
+-----------------------------------------------
+                0.00    0.00    2320/2320        ros::SubscriptionCallbackHelperT<boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&, void>::call(ros::SubscriptionCallbackHelperCallParams&) [45]
+[14]     0.0    0.00    0.00    2320         boost::detail::function::void_function_obj_invoker1<boost::function<void (boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&)>, void, boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> >::invoke(boost::detail::function::function_buffer&, boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const>) [14]
+                0.00    0.00    2320/2320        boost::detail::function::void_function_obj_invoker1<boost::_bi::bind_t<void, boost::_mfi::mf1<void, TransformFusion, boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&>, boost::_bi::list2<boost::_bi::value<TransformFusion*>, boost::arg<1> > >, void, boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&>::invoke(boost::detail::function::function_buffer&, boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&) [13]
+                0.00    0.00    1856/1856        TransformFusion::laserOdometryHandler(boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&) [16]
+                0.00    0.00     464/464         TransformFusion::odomAftMappedHandler(boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&) [19]
+-----------------------------------------------
+                0.00    0.00       4/1860        ros::Subscriber ros::NodeHandle::subscribe<nav_msgs::Odometry_<std::allocator<void> >, TransformFusion>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int, void (TransformFusion::*)(boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&), TransformFusion*, ros::TransportHints const&) [24]
+                0.00    0.00    1856/1860        void ros::Publisher::publish<nav_msgs::Odometry_<std::allocator<void> > >(nav_msgs::Odometry_<std::allocator<void> > const&) const [18]
+[15]     0.0    0.00    0.00    1860         boost::detail::function::has_empty_target(...) [15]
+-----------------------------------------------
+                0.00    0.00    1856/1856        boost::detail::function::void_function_obj_invoker1<boost::function<void (boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&)>, void, boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> >::invoke(boost::detail::function::function_buffer&, boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const>) [14]
+[16]     0.0    0.00    0.00    1856         TransformFusion::laserOdometryHandler(boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&) [16]
+                0.00    0.00    1856/1856        TransformFusion::transformAssociateToMap() [17]
+                0.00    0.00    1856/1856        void ros::Publisher::publish<nav_msgs::Odometry_<std::allocator<void> > >(nav_msgs::Odometry_<std::allocator<void> > const&) const [18]
+-----------------------------------------------
+                0.00    0.00    1856/1856        TransformFusion::laserOdometryHandler(boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&) [16]
+[17]     0.0    0.00    0.00    1856         TransformFusion::transformAssociateToMap() [17]
+-----------------------------------------------
+                0.00    0.00    1856/1856        TransformFusion::laserOdometryHandler(boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&) [16]
+[18]     0.0    0.00    0.00    1856         void ros::Publisher::publish<nav_msgs::Odometry_<std::allocator<void> > >(nav_msgs::Odometry_<std::allocator<void> > const&) const [18]
+                0.00    0.00    3712/8358        frame_dummy [1]
+                0.00    0.00    1856/1860        boost::detail::function::has_empty_target(...) [15]
+-----------------------------------------------
+                0.00    0.00     464/464         boost::detail::function::void_function_obj_invoker1<boost::function<void (boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&)>, void, boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> >::invoke(boost::detail::function::function_buffer&, boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const>) [14]
+[19]     0.0    0.00    0.00     464         TransformFusion::odomAftMappedHandler(boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&) [19]
+-----------------------------------------------
+                                  57             std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::_M_erase(std::_Rb_tree_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >*) [20]
+                0.00    0.00       2/19          ros::Subscriber ros::NodeHandle::subscribe<nav_msgs::Odometry_<std::allocator<void> >, TransformFusion>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int, void (TransformFusion::*)(boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&), TransformFusion*, ros::TransportHints const&) [24]
+                0.00    0.00       3/19          TransformFusion::TransformFusion() [35]
+                0.00    0.00      14/19          std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::operator=(std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&) [33]
+[20]     0.0    0.00    0.00      19+57      std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::_M_erase(std::_Rb_tree_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >*) [20]
+                                  57             std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::_M_erase(std::_Rb_tree_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >*) [20]
+-----------------------------------------------
+                0.00    0.00       2/6           boost::detail::sp_counted_impl_pd<ros::SubscriptionCallbackHelperT<boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&, void>*, boost::detail::sp_ms_deleter<ros::SubscriptionCallbackHelperT<boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&, void> > >::dispose() [91]
+                0.00    0.00       4/6           boost::detail::sp_if_not_array<ros::SubscriptionCallbackHelperT<boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&, void> >::type boost::make_shared<ros::SubscriptionCallbackHelperT<boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&, void>, boost::function<void (boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&)> const&, boost::function<boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > > ()> const&>(boost::function<void (boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&)> const&, boost::function<boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > > ()> const&) [26]
+[21]     0.0    0.00    0.00       6         boost::detail::function::functor_manager<boost::function<void (boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&)> >::manage(boost::detail::function::function_buffer const&, boost::detail::function::function_buffer&, boost::detail::function::functor_manager_operation_type) [21]
+-----------------------------------------------
+                0.00    0.00       4/4           boost::function<void (ros::SingleSubscriberPublisher const&)>::operator=(boost::function<void (ros::SingleSubscriberPublisher const&)> const&) [31]
+[22]     0.0    0.00    0.00       4         boost::function1<void, ros::SingleSubscriberPublisher const&>::move_assign(boost::function1<void, ros::SingleSubscriberPublisher const&>&) [22]
+-----------------------------------------------
+                0.00    0.00       3/3           std::map<pcl::SacModel, unsigned int, std::less<pcl::SacModel>, std::allocator<std::pair<pcl::SacModel const, unsigned int> > >::~map() [133]
+[23]     0.0    0.00    0.00       3         std::_Rb_tree<pcl::SacModel, std::pair<pcl::SacModel const, unsigned int>, std::_Select1st<std::pair<pcl::SacModel const, unsigned int> >, std::less<pcl::SacModel>, std::allocator<std::pair<pcl::SacModel const, unsigned int> > >::_M_erase(std::_Rb_tree_node<std::pair<pcl::SacModel const, unsigned int> >*) [23]
+-----------------------------------------------
+                0.00    0.00       2/2           TransformFusion::TransformFusion() [35]
+[24]     0.0    0.00    0.00       2         ros::Subscriber ros::NodeHandle::subscribe<nav_msgs::Odometry_<std::allocator<void> >, TransformFusion>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int, void (TransformFusion::*)(boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&), TransformFusion*, ros::TransportHints const&) [24]
+                0.00    0.00       4/1860        boost::detail::function::has_empty_target(...) [15]
+                0.00    0.00       2/2           boost::detail::sp_if_not_array<ros::SubscriptionCallbackHelperT<boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&, void> >::type boost::make_shared<ros::SubscriptionCallbackHelperT<boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&, void>, boost::function<void (boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&)> const&, boost::function<boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > > ()> const&>(boost::function<void (boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&)> const&, boost::function<boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > > ()> const&) [26]
+                0.00    0.00       2/2           std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::operator=(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&) [32]
+                0.00    0.00       2/2           std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::operator=(std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&) [33]
+                0.00    0.00       2/19          std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::_M_erase(std::_Rb_tree_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >*) [20]
+                0.00    0.00       2/13923       boost::detail::sp_counted_base::release() [9]
+-----------------------------------------------
+                0.00    0.00       2/2           boost::detail::sp_counted_impl_pd<ros::SubscriptionCallbackHelperT<boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&, void>*, boost::detail::sp_ms_deleter<ros::SubscriptionCallbackHelperT<boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&, void> > >::dispose() [91]
+[25]     0.0    0.00    0.00       2         ros::SubscriptionCallbackHelperT<boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&, void>::~SubscriptionCallbackHelperT() [25]
+-----------------------------------------------
+                0.00    0.00       2/2           ros::Subscriber ros::NodeHandle::subscribe<nav_msgs::Odometry_<std::allocator<void> >, TransformFusion>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int, void (TransformFusion::*)(boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&), TransformFusion*, ros::TransportHints const&) [24]
+[26]     0.0    0.00    0.00       2         boost::detail::sp_if_not_array<ros::SubscriptionCallbackHelperT<boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&, void> >::type boost::make_shared<ros::SubscriptionCallbackHelperT<boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&, void>, boost::function<void (boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&)> const&, boost::function<boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > > ()> const&>(boost::function<void (boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&)> const&, boost::function<boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > > ()> const&) [26]
+                0.00    0.00       4/6           boost::detail::function::functor_manager<boost::function<void (boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&)> >::manage(boost::detail::function::function_buffer const&, boost::detail::function::function_buffer&, boost::detail::function::functor_manager_operation_type) [21]
+                0.00    0.00       2/2           boost::detail::sp_counted_impl_pd<ros::SubscriptionCallbackHelperT<boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&, void>*, boost::detail::sp_ms_deleter<ros::SubscriptionCallbackHelperT<boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&, void> > >::get_untyped_deleter() [30]
+                0.00    0.00       2/13923       boost::detail::sp_counted_base::release() [9]
+-----------------------------------------------
+                0.00    0.00       2/2           boost::exception_ptr boost::exception_detail::get_static_exception_object<boost::exception_detail::bad_alloc_>() [65]
+[27]     0.0    0.00    0.00       2         boost::exception_detail::bad_alloc_::~bad_alloc_() [27]
+-----------------------------------------------
+                0.00    0.00       2/2           boost::exception_ptr boost::exception_detail::get_static_exception_object<boost::exception_detail::bad_exception_>() [66]
+[28]     0.0    0.00    0.00       2         boost::exception_detail::bad_exception_::~bad_exception_() [28]
+-----------------------------------------------
+                0.00    0.00       1/2           boost::exception_ptr boost::exception_detail::get_static_exception_object<boost::exception_detail::bad_alloc_>() [65]
+                0.00    0.00       1/2           boost::exception_ptr boost::exception_detail::get_static_exception_object<boost::exception_detail::bad_exception_>() [66]
+[29]     0.0    0.00    0.00       2         boost::exception_detail::copy_boost_exception(boost::exception*, boost::exception const*) [29]
+-----------------------------------------------
+                0.00    0.00       2/2           boost::detail::sp_if_not_array<ros::SubscriptionCallbackHelperT<boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&, void> >::type boost::make_shared<ros::SubscriptionCallbackHelperT<boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&, void>, boost::function<void (boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&)> const&, boost::function<boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > > ()> const&>(boost::function<void (boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&)> const&, boost::function<boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > > ()> const&) [26]
+[30]     0.0    0.00    0.00       2         boost::detail::sp_counted_impl_pd<ros::SubscriptionCallbackHelperT<boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&, void>*, boost::detail::sp_ms_deleter<ros::SubscriptionCallbackHelperT<boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&, void> > >::get_untyped_deleter() [30]
+-----------------------------------------------
+                0.00    0.00       2/2           TransformFusion::TransformFusion() [35]
+[31]     0.0    0.00    0.00       2         boost::function<void (ros::SingleSubscriberPublisher const&)>::operator=(boost::function<void (ros::SingleSubscriberPublisher const&)> const&) [31]
+                0.00    0.00       4/4           boost::function1<void, ros::SingleSubscriberPublisher const&>::move_assign(boost::function1<void, ros::SingleSubscriberPublisher const&>&) [22]
+-----------------------------------------------
+                0.00    0.00       2/2           ros::Subscriber ros::NodeHandle::subscribe<nav_msgs::Odometry_<std::allocator<void> >, TransformFusion>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int, void (TransformFusion::*)(boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&), TransformFusion*, ros::TransportHints const&) [24]
+[32]     0.0    0.00    0.00       2         std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::operator=(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&) [32]
+                0.00    0.00       3/8358        frame_dummy [1]
+-----------------------------------------------
+                0.00    0.00       2/2           ros::Subscriber ros::NodeHandle::subscribe<nav_msgs::Odometry_<std::allocator<void> >, TransformFusion>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int, void (TransformFusion::*)(boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&), TransformFusion*, ros::TransportHints const&) [24]
+[33]     0.0    0.00    0.00       2         std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::operator=(std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&) [33]
+                0.00    0.00      14/19          std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::_M_erase(std::_Rb_tree_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >*) [20]
+-----------------------------------------------
+                0.00    0.00       1/1           TransformFusion::TransformFusion() [35]
+[34]     0.0    0.00    0.00       1         ros::AdvertiseOptions::~AdvertiseOptions() [34]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+  [16] TransformFusion::laserOdometryHandler(boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&) [9] boost::detail::sp_counted_base::release() [31] boost::function<void (ros::SingleSubscriberPublisher const&)>::operator=(boost::function<void (ros::SingleSubscriberPublisher const&)> const&)
+  [19] TransformFusion::odomAftMappedHandler(boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&) [30] boost::detail::sp_counted_impl_pd<ros::SubscriptionCallbackHelperT<boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&, void>*, boost::detail::sp_ms_deleter<ros::SubscriptionCallbackHelperT<boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&, void> > >::get_untyped_deleter() [22] boost::function1<void, ros::SingleSubscriberPublisher const&>::move_assign(boost::function1<void, ros::SingleSubscriberPublisher const&>&)
+  [17] TransformFusion::transformAssociateToMap() [10] boost::detail::sp_counted_impl_pd<nav_msgs::Odometry_<std::allocator<void> >*, boost::detail::sp_ms_deleter<nav_msgs::Odometry_<std::allocator<void> > > >::get_untyped_deleter() [18] void ros::Publisher::publish<nav_msgs::Odometry_<std::allocator<void> > >(nav_msgs::Odometry_<std::allocator<void> > const&) const
+  [24] ros::Subscriber ros::NodeHandle::subscribe<nav_msgs::Odometry_<std::allocator<void> >, TransformFusion>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int, void (TransformFusion::*)(boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&), TransformFusion*, ros::TransportHints const&) [11] boost::detail::sp_counted_impl_pd<nav_msgs::Odometry_<std::allocator<void> >*, boost::detail::sp_ms_deleter<nav_msgs::Odometry_<std::allocator<void> > > >::dispose() [32] std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::operator=(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&)
+  [34] ros::AdvertiseOptions::~AdvertiseOptions() [8] boost::detail::sp_counted_impl_pd<unsigned char*, boost::checked_array_deleter<unsigned char> >::dispose() [23] std::_Rb_tree<pcl::SacModel, std::pair<pcl::SacModel const, unsigned int>, std::_Select1st<std::pair<pcl::SacModel const, unsigned int> >, std::less<pcl::SacModel>, std::allocator<std::pair<pcl::SacModel const, unsigned int> > >::_M_erase(std::_Rb_tree_node<std::pair<pcl::SacModel const, unsigned int> >*)
+  [25] ros::SubscriptionCallbackHelperT<boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&, void>::~SubscriptionCallbackHelperT() [21] boost::detail::function::functor_manager<boost::function<void (boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&)> >::manage(boost::detail::function::function_buffer const&, boost::detail::function::function_buffer&, boost::detail::function::functor_manager_operation_type) [20] std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::_M_erase(std::_Rb_tree_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >*)
+  [26] boost::detail::sp_if_not_array<ros::SubscriptionCallbackHelperT<boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&, void> >::type boost::make_shared<ros::SubscriptionCallbackHelperT<boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&, void>, boost::function<void (boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&)> const&, boost::function<boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > > ()> const&>(boost::function<void (boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&)> const&, boost::function<boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > > ()> const&) [15] boost::detail::function::has_empty_target(...) [33] std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::operator=(std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)
+  [27] boost::exception_detail::bad_alloc_::~bad_alloc_() [12] boost::detail::function::function_obj_invoker0<ros::DefaultMessageCreator<nav_msgs::Odometry_<std::allocator<void> > >, boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > > >::invoke(boost::detail::function::function_buffer&) [1] frame_dummy
+  [28] boost::exception_detail::bad_exception_::~bad_exception_() [13] boost::detail::function::void_function_obj_invoker1<boost::_bi::bind_t<void, boost::_mfi::mf1<void, TransformFusion, boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&>, boost::_bi::list2<boost::_bi::value<TransformFusion*>, boost::arg<1> > >, void, boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&>::invoke(boost::detail::function::function_buffer&, boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&) [2] main
+  [29] boost::exception_detail::copy_boost_exception(boost::exception*, boost::exception const*) [14] boost::detail::function::void_function_obj_invoker1<boost::function<void (boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> const&)>, void, boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const> >::invoke(boost::detail::function::function_buffer&, boost::shared_ptr<nav_msgs::Odometry_<std::allocator<void> > const>)

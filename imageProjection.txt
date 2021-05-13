@@ -1,0 +1,554 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 74.60      7.34     7.34     1857     3.95     5.30  ImageProjection::cloudHandler(boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&)
+  9.76      8.30     0.96     1859     0.52     0.52  ImageProjection::resetParameters()
+  7.93      9.08     0.78     1858     0.42     0.53  void pcl::fromROSMsg<pcl::PointXYZI>(sensor_msgs::PointCloud2_<std::allocator<void> > const&, pcl::PointCloud<pcl::PointXYZI>&)
+  5.59      9.63     0.55     1857     0.30     0.30  void pcl::fromPCLPointCloud2<PointXYZIR>(pcl::PCLPointCloud2 const&, pcl::PointCloud<PointXYZIR>&, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> > const&)
+  2.03      9.83     0.20     1860     0.11     0.11  std::vector<pcl::PointXYZI, Eigen::aligned_allocator<pcl::PointXYZI> >::_M_default_append(unsigned long)
+  0.10      9.84     0.01     3716     0.00     0.00  void pcl::toPCLPointCloud2<pcl::PointXYZI>(pcl::PointCloud<pcl::PointXYZI> const&, pcl::PCLPointCloud2&)
+  0.00      9.84     0.00    37163     0.00     0.00  frame_dummy
+  0.00      9.84     0.00    26787     0.00     0.00  boost::detail::sp_counted_impl_pd<unsigned char*, boost::checked_array_deleter<unsigned char> >::dispose()
+  0.00      9.84     0.00    20445     0.00     0.00  boost::detail::sp_counted_base::release()
+  0.00      9.84     0.00    16717     0.00     0.00  std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> >::push_back(pcl::detail::FieldMapping const&)
+  0.00      9.84     0.00    13006     0.00     0.00  pcl::detail::fieldOrdering(pcl::detail::FieldMapping const&, pcl::detail::FieldMapping const&)
+  0.00      9.84     0.00    13000     0.00     0.00  void std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> >::_M_realloc_insert<pcl::detail::FieldMapping const&>(__gnu_cxx::__normal_iterator<pcl::detail::FieldMapping*, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> > >, pcl::detail::FieldMapping const&)
+  0.00      9.84     0.00    11143     0.00     0.00  void std::vector<pcl::PCLPointField, std::allocator<pcl::PCLPointField> >::_M_realloc_insert<pcl::PCLPointField const&>(__gnu_cxx::__normal_iterator<pcl::PCLPointField*, std::vector<pcl::PCLPointField, std::allocator<pcl::PCLPointField> > >, pcl::PCLPointField const&)
+  0.00      9.84     0.00     5573     0.00     0.00  ros::SerializedMessage::~SerializedMessage()
+  0.00      9.84     0.00     5573     0.00     0.00  boost::detail::function::has_empty_target(...)
+  0.00      9.84     0.00     5570     0.00     0.00  boost::function0<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > > >::move_assign(boost::function0<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > > >&)
+  0.00      9.84     0.00     5544     0.00     0.00  cv::Mat::~Mat()
+  0.00      9.84     0.00     5544     0.00     0.00  cv::Mat::operator=(cv::Mat&&)
+  0.00      9.84     0.00     3716     0.00     0.00  void pcl::toROSMsg<pcl::PointXYZI>(pcl::PointCloud<pcl::PointXYZI> const&, sensor_msgs::PointCloud2_<std::allocator<void> >&)
+  0.00      9.84     0.00     3716     0.00     0.00  ros::SerializedMessage ros::serialization::serializeMessage<sensor_msgs::PointCloud2_<std::allocator<void> > >(sensor_msgs::PointCloud2_<std::allocator<void> > const&)
+  0.00      9.84     0.00     3716     0.00     0.00  std::vector<pcl::PCLPointField, std::allocator<pcl::PCLPointField> >::_M_default_append(unsigned long)
+  0.00      9.84     0.00     3716     0.00     0.00  std::vector<unsigned char, std::allocator<unsigned char> >::_M_default_append(unsigned long)
+  0.00      9.84     0.00     3716     0.00     0.00  void std::__introsort_loop<__gnu_cxx::__normal_iterator<pcl::detail::FieldMapping*, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(pcl::detail::FieldMapping const&, pcl::detail::FieldMapping const&)> >(__gnu_cxx::__normal_iterator<pcl::detail::FieldMapping*, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> > >, __gnu_cxx::__normal_iterator<pcl::detail::FieldMapping*, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(pcl::detail::FieldMapping const&, pcl::detail::FieldMapping const&)>) [clone .constprop.693]
+  0.00      9.84     0.00     3715     0.00     0.00  void ros::Publisher::publish<sensor_msgs::PointCloud2_<std::allocator<void> > >(sensor_msgs::PointCloud2_<std::allocator<void> > const&) const
+  0.00      9.84     0.00     3715     0.00     0.00  std::vector<sensor_msgs::PointField_<std::allocator<void> >, std::allocator<sensor_msgs::PointField_<std::allocator<void> > > >::_M_default_append(unsigned long)
+  0.00      9.84     0.00     3715     0.00     0.00  std::vector<unsigned char, std::allocator<unsigned char> >::operator=(std::vector<unsigned char, std::allocator<unsigned char> > const&)
+  0.00      9.84     0.00     3715     0.00     0.00  void std::__insertion_sort<__gnu_cxx::__normal_iterator<pcl::detail::FieldMapping*, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> > >, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(pcl::detail::FieldMapping const&, pcl::detail::FieldMapping const&)> >(__gnu_cxx::__normal_iterator<pcl::detail::FieldMapping*, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> > >, __gnu_cxx::__normal_iterator<pcl::detail::FieldMapping*, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> > >, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(pcl::detail::FieldMapping const&, pcl::detail::FieldMapping const&)>) [clone .constprop.698]
+  0.00      9.84     0.00     1858     0.00     0.01  ImageProjection::publishCloud()
+  0.00      9.84     0.00     1858     0.00     0.30  void pcl::fromROSMsg<PointXYZIR>(sensor_msgs::PointCloud2_<std::allocator<void> > const&, pcl::PointCloud<PointXYZIR>&)
+  0.00      9.84     0.00     1858     0.00     0.00  void pcl::createMapping<PointXYZIR>(std::vector<pcl::PCLPointField, std::allocator<pcl::PCLPointField> > const&, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> >&)
+  0.00      9.84     0.00     1858     0.00     0.00  void pcl::createMapping<pcl::PointXYZI>(std::vector<pcl::PCLPointField, std::allocator<pcl::PCLPointField> > const&, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> >&)
+  0.00      9.84     0.00     1858     0.00     0.00  boost::detail::sp_counted_impl_pd<sensor_msgs::PointCloud2_<std::allocator<void> >*, boost::detail::sp_ms_deleter<sensor_msgs::PointCloud2_<std::allocator<void> > > >::get_untyped_deleter()
+  0.00      9.84     0.00     1858     0.00     0.00  boost::detail::sp_counted_impl_pd<sensor_msgs::PointCloud2_<std::allocator<void> >*, boost::detail::sp_ms_deleter<sensor_msgs::PointCloud2_<std::allocator<void> > > >::dispose()
+  0.00      9.84     0.00     1858     0.00     0.00  boost::detail::function::function_obj_invoker0<ros::DefaultMessageCreator<sensor_msgs::PointCloud2_<std::allocator<void> > >, boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > > >::invoke(boost::detail::function::function_buffer&)
+  0.00      9.84     0.00     1858     0.00     0.00  boost::detail::function::void_function_obj_invoker1<boost::_bi::bind_t<void, boost::_mfi::mf1<void, ImageProjection, boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&>, boost::_bi::list2<boost::_bi::value<ImageProjection*>, boost::arg<1> > >, void, boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&>::invoke(boost::detail::function::function_buffer&, boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&)
+  0.00      9.84     0.00     1858     0.00     0.00  void ros::Publisher::publish<cloud_msgs::cloud_info_<std::allocator<void> > >(cloud_msgs::cloud_info_<std::allocator<void> > const&) const
+  0.00      9.84     0.00     1857     0.00     0.00  ros::SerializedMessage ros::serialization::serializeMessage<cloud_msgs::cloud_info_<std::allocator<void> > >(cloud_msgs::cloud_info_<std::allocator<void> > const&)
+  0.00      9.84     0.00     1857     0.00     5.30  boost::detail::function::void_function_obj_invoker1<boost::function<void (boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&)>, void, boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> >::invoke(boost::detail::function::function_buffer&, boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const>)
+  0.00      9.84     0.00      913     0.00     0.00  std::vector<PointXYZIR, Eigen::aligned_allocator<PointXYZIR> >::_M_default_append(unsigned long)
+  0.00      9.84     0.00       42     0.00     0.00  boost::function1<void, ros::SingleSubscriberPublisher const&>::move_assign(boost::function1<void, ros::SingleSubscriberPublisher const&>&)
+  0.00      9.84     0.00       27     0.00     0.00  void std::vector<pcl::PointXYZI, Eigen::aligned_allocator<pcl::PointXYZI> >::_M_realloc_insert<pcl::PointXYZI const&>(__gnu_cxx::__normal_iterator<pcl::PointXYZI*, std::vector<pcl::PointXYZI, Eigen::aligned_allocator<pcl::PointXYZI> > >, pcl::PointXYZI const&)
+  0.00      9.84     0.00       21     0.00     0.00  std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::_M_erase(std::_Rb_tree_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >*)
+  0.00      9.84     0.00       14     0.00     0.00  boost::function<void (ros::SingleSubscriberPublisher const&)>::operator=(boost::function<void (ros::SingleSubscriberPublisher const&)> const&)
+  0.00      9.84     0.00        8     0.00     0.00  Eigen::internal::aligned_malloc(unsigned long) [clone .constprop.703]
+  0.00      9.84     0.00        7     0.00     0.00  pcl::PointCloud<pcl::PointXYZI>::PointCloud()
+  0.00      9.84     0.00        7     0.00     0.00  ros::AdvertiseOptions::~AdvertiseOptions()
+  0.00      9.84     0.00        7     0.00     0.00  void boost::shared_ptr<pcl::PointCloud<pcl::PointXYZI> >::reset<pcl::PointCloud<pcl::PointXYZI> >(pcl::PointCloud<pcl::PointXYZI>*)
+  0.00      9.84     0.00        7     0.00     0.00  boost::shared_ptr<ros::Publisher::Impl>::operator=(boost::shared_ptr<ros::Publisher::Impl> const&)
+  0.00      9.84     0.00        7     0.00     0.00  boost::detail::sp_counted_impl_p<pcl::PointCloud<pcl::PointXYZI> >::dispose()
+  0.00      9.84     0.00        7     0.00     0.00  boost::detail::sp_counted_impl_p<pcl::PointCloud<pcl::PointXYZI> >::~sp_counted_impl_p()
+  0.00      9.84     0.00        6     0.00     0.00  ros::Publisher ros::NodeHandle::advertise<sensor_msgs::PointCloud2_<std::allocator<void> > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int, bool)
+  0.00      9.84     0.00        3     0.00     0.00  boost::detail::function::functor_manager<boost::function<void (boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&)> >::manage(boost::detail::function::function_buffer const&, boost::detail::function::function_buffer&, boost::detail::function::functor_manager_operation_type)
+  0.00      9.84     0.00        3     0.00     0.00  void std::vector<std::pair<signed char, signed char>, std::allocator<std::pair<signed char, signed char> > >::_M_realloc_insert<std::pair<signed char, signed char> const&>(__gnu_cxx::__normal_iterator<std::pair<signed char, signed char>*, std::vector<std::pair<signed char, signed char>, std::allocator<std::pair<signed char, signed char> > > >, std::pair<signed char, signed char> const&)
+  0.00      9.84     0.00        3     0.00     0.00  std::_Rb_tree<pcl::SacModel, std::pair<pcl::SacModel const, unsigned int>, std::_Select1st<std::pair<pcl::SacModel const, unsigned int> >, std::less<pcl::SacModel>, std::allocator<std::pair<pcl::SacModel const, unsigned int> > >::_M_erase(std::_Rb_tree_node<std::pair<pcl::SacModel const, unsigned int> >*)
+  0.00      9.84     0.00        2     0.00     0.00  boost::detail::sp_counted_impl_pd<unsigned char*, boost::checked_array_deleter<unsigned char> >::~sp_counted_impl_pd()
+  0.00      9.84     0.00        2     0.00     0.00  boost::system::error_category::std_category::~std_category()
+  0.00      9.84     0.00        1     0.00     0.22  ImageProjection::allocateMemory()
+  0.00      9.84     0.00        1     0.00     0.00  ros::Publisher ros::NodeHandle::advertise<cloud_msgs::cloud_info_<std::allocator<void> > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int, bool)
+  0.00      9.84     0.00        1     0.00     0.00  ros::Subscriber ros::NodeHandle::subscribe<sensor_msgs::PointCloud2_<std::allocator<void> >, ImageProjection>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int, void (ImageProjection::*)(boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&), ImageProjection*, ros::TransportHints const&)
+  0.00      9.84     0.00        1     0.00     0.00  ros::SubscriptionCallbackHelperT<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&, void>::~SubscriptionCallbackHelperT()
+  0.00      9.84     0.00        1     0.00     0.00  boost::detail::sp_if_not_array<ros::SubscriptionCallbackHelperT<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&, void> >::type boost::make_shared<ros::SubscriptionCallbackHelperT<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&, void>, boost::function<void (boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&)> const&, boost::function<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > > ()> const&>(boost::function<void (boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&)> const&, boost::function<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > > ()> const&)
+  0.00      9.84     0.00        1     0.00     0.00  boost::detail::sp_counted_impl_p<pcl::PointCloud<PointXYZIR> >::dispose()
+  0.00      9.84     0.00        1     0.00     0.00  boost::detail::sp_counted_impl_p<pcl::PointCloud<PointXYZIR> >::~sp_counted_impl_p()
+  0.00      9.84     0.00        1     0.00     0.00  boost::detail::sp_counted_impl_pd<ros::SubscriptionCallbackHelperT<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&, void>*, boost::detail::sp_ms_deleter<ros::SubscriptionCallbackHelperT<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&, void> > >::get_untyped_deleter()
+  0.00      9.84     0.00        1     0.00     0.00  std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::operator=(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&)
+  0.00      9.84     0.00        1     0.00     0.00  std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::operator=(std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)
+  0.00      9.84     0.00        1     0.00     0.00  main
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) for 0.10% of 9.84 seconds
+
+index % time    self  children    called     name
+                7.34    2.50    1857/1857        boost::detail::function::void_function_obj_invoker1<boost::function<void (boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&)>, void, boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> >::invoke(boost::detail::function::function_buffer&, boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const>) [2]
+[1]    100.0    7.34    2.50    1857         ImageProjection::cloudHandler(boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&) [1]
+                0.78    0.20    1858/1858        void pcl::fromROSMsg<pcl::PointXYZI>(sensor_msgs::PointCloud2_<std::allocator<void> > const&, pcl::PointCloud<pcl::PointXYZI>&) [4]
+                0.96    0.00    1858/1859        ImageProjection::resetParameters() [5]
+                0.00    0.55    1858/1858        void pcl::fromROSMsg<PointXYZIR>(sensor_msgs::PointCloud2_<std::allocator<void> > const&, pcl::PointCloud<PointXYZIR>&) [6]
+                0.00    0.01    1858/1858        ImageProjection::publishCloud() [11]
+                0.00    0.00      27/27          void std::vector<pcl::PointXYZI, Eigen::aligned_allocator<pcl::PointXYZI> >::_M_realloc_insert<pcl::PointXYZI const&>(__gnu_cxx::__normal_iterator<pcl::PointXYZI*, std::vector<pcl::PointXYZI, Eigen::aligned_allocator<pcl::PointXYZI> > >, pcl::PointXYZI const&) [124]
+-----------------------------------------------
+                0.00    9.84    1857/1857        ros::SubscriptionCallbackHelperT<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&, void>::call(ros::SubscriptionCallbackHelperCallParams&) [3]
+[2]    100.0    0.00    9.84    1857         boost::detail::function::void_function_obj_invoker1<boost::function<void (boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&)>, void, boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> >::invoke(boost::detail::function::function_buffer&, boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const>) [2]
+                7.34    2.50    1857/1857        ImageProjection::cloudHandler(boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&) [1]
+                0.00    0.00    1858/1858        boost::detail::function::void_function_obj_invoker1<boost::_bi::bind_t<void, boost::_mfi::mf1<void, ImageProjection, boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&>, boost::_bi::list2<boost::_bi::value<ImageProjection*>, boost::arg<1> > >, void, boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&>::invoke(boost::detail::function::function_buffer&, boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&) [119]
+-----------------------------------------------
+                                                 <spontaneous>
+[3]    100.0    0.00    9.84                 ros::SubscriptionCallbackHelperT<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&, void>::call(ros::SubscriptionCallbackHelperCallParams&) [3]
+                0.00    9.84    1857/1857        boost::detail::function::void_function_obj_invoker1<boost::function<void (boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&)>, void, boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> >::invoke(boost::detail::function::function_buffer&, boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const>) [2]
+                0.00    0.00    7428/20445       boost::detail::sp_counted_base::release() [96]
+                0.00    0.00    5570/5570        boost::function0<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > > >::move_assign(boost::function0<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > > >&) [103]
+-----------------------------------------------
+                0.78    0.20    1858/1858        ImageProjection::cloudHandler(boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&) [1]
+[4]     10.0    0.78    0.20    1858         void pcl::fromROSMsg<pcl::PointXYZI>(sensor_msgs::PointCloud2_<std::allocator<void> > const&, pcl::PointCloud<pcl::PointXYZI>&) [4]
+                0.20    0.00    1858/1860        std::vector<pcl::PointXYZI, Eigen::aligned_allocator<pcl::PointXYZI> >::_M_default_append(unsigned long) [8]
+                0.00    0.00    1858/3715        std::vector<unsigned char, std::allocator<unsigned char> >::operator=(std::vector<unsigned char, std::allocator<unsigned char> > const&) [112]
+                0.00    0.00    1858/1858        void pcl::createMapping<pcl::PointXYZI>(std::vector<pcl::PCLPointField, std::allocator<pcl::PCLPointField> > const&, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> >&) [115]
+                0.00    0.00    1858/3716        std::vector<pcl::PCLPointField, std::allocator<pcl::PCLPointField> >::_M_default_append(unsigned long) [107]
+-----------------------------------------------
+                0.00    0.00       1/1859        ImageProjection::ImageProjection() [12]
+                0.96    0.00    1858/1859        ImageProjection::cloudHandler(boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&) [1]
+[5]      9.8    0.96    0.00    1859         ImageProjection::resetParameters() [5]
+                0.00    0.00    5544/5544        cv::Mat::operator=(cv::Mat&&) [105]
+                0.00    0.00    5541/5544        cv::Mat::~Mat() [104]
+-----------------------------------------------
+                0.00    0.55    1858/1858        ImageProjection::cloudHandler(boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&) [1]
+[6]      5.6    0.00    0.55    1858         void pcl::fromROSMsg<PointXYZIR>(sensor_msgs::PointCloud2_<std::allocator<void> > const&, pcl::PointCloud<PointXYZIR>&) [6]
+                0.55    0.00    1857/1857        void pcl::fromPCLPointCloud2<PointXYZIR>(pcl::PCLPointCloud2 const&, pcl::PointCloud<PointXYZIR>&, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> > const&) [7]
+                0.00    0.00    1858/1858        void pcl::createMapping<PointXYZIR>(std::vector<pcl::PCLPointField, std::allocator<pcl::PCLPointField> > const&, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> >&) [114]
+                0.00    0.00    1858/3716        std::vector<pcl::PCLPointField, std::allocator<pcl::PCLPointField> >::_M_default_append(unsigned long) [107]
+                0.00    0.00    1857/3715        std::vector<unsigned char, std::allocator<unsigned char> >::operator=(std::vector<unsigned char, std::allocator<unsigned char> > const&) [112]
+-----------------------------------------------
+                0.55    0.00    1857/1857        void pcl::fromROSMsg<PointXYZIR>(sensor_msgs::PointCloud2_<std::allocator<void> > const&, pcl::PointCloud<PointXYZIR>&) [6]
+[7]      5.6    0.55    0.00    1857         void pcl::fromPCLPointCloud2<PointXYZIR>(pcl::PCLPointCloud2 const&, pcl::PointCloud<PointXYZIR>&, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> > const&) [7]
+                0.00    0.00     913/913         std::vector<PointXYZIR, Eigen::aligned_allocator<PointXYZIR> >::_M_default_append(unsigned long) [122]
+-----------------------------------------------
+                0.00    0.00       2/1860        ImageProjection::allocateMemory() [13]
+                0.20    0.00    1858/1860        void pcl::fromROSMsg<pcl::PointXYZI>(sensor_msgs::PointCloud2_<std::allocator<void> > const&, pcl::PointCloud<pcl::PointXYZI>&) [4]
+[8]      2.0    0.20    0.00    1860         std::vector<pcl::PointXYZI, Eigen::aligned_allocator<pcl::PointXYZI> >::_M_default_append(unsigned long) [8]
+-----------------------------------------------
+                0.01    0.00    3716/3716        void pcl::toROSMsg<pcl::PointXYZI>(pcl::PointCloud<pcl::PointXYZI> const&, sensor_msgs::PointCloud2_<std::allocator<void> >&) [10]
+[9]      0.1    0.01    0.00    3716         void pcl::toPCLPointCloud2<pcl::PointXYZI>(pcl::PointCloud<pcl::PointXYZI> const&, pcl::PCLPointCloud2&) [9]
+                0.00    0.00   11143/11143       void std::vector<pcl::PCLPointField, std::allocator<pcl::PCLPointField> >::_M_realloc_insert<pcl::PCLPointField const&>(__gnu_cxx::__normal_iterator<pcl::PCLPointField*, std::vector<pcl::PCLPointField, std::allocator<pcl::PCLPointField> > >, pcl::PCLPointField const&) [100]
+                0.00    0.00    3716/3716        std::vector<unsigned char, std::allocator<unsigned char> >::_M_default_append(unsigned long) [108]
+                0.00    0.00    3714/37163       frame_dummy [14]
+-----------------------------------------------
+                0.00    0.01    3716/3716        ImageProjection::publishCloud() [11]
+[10]     0.1    0.00    0.01    3716         void pcl::toROSMsg<pcl::PointXYZI>(pcl::PointCloud<pcl::PointXYZI> const&, sensor_msgs::PointCloud2_<std::allocator<void> >&) [10]
+                0.01    0.00    3716/3716        void pcl::toPCLPointCloud2<pcl::PointXYZI>(pcl::PointCloud<pcl::PointXYZI> const&, pcl::PCLPointCloud2&) [9]
+                0.00    0.00    1857/3715        std::vector<sensor_msgs::PointField_<std::allocator<void> >, std::allocator<sensor_msgs::PointField_<std::allocator<void> > > >::_M_default_append(unsigned long) [111]
+-----------------------------------------------
+                0.00    0.01    1858/1858        ImageProjection::cloudHandler(boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&) [1]
+[11]     0.1    0.00    0.01    1858         ImageProjection::publishCloud() [11]
+                0.00    0.01    3716/3716        void pcl::toROSMsg<pcl::PointXYZI>(pcl::PointCloud<pcl::PointXYZI> const&, sensor_msgs::PointCloud2_<std::allocator<void> >&) [10]
+                0.00    0.00    3715/3715        void ros::Publisher::publish<sensor_msgs::PointCloud2_<std::allocator<void> > >(sensor_msgs::PointCloud2_<std::allocator<void> > const&) const [110]
+                0.00    0.00    1858/1858        void ros::Publisher::publish<cloud_msgs::cloud_info_<std::allocator<void> > >(cloud_msgs::cloud_info_<std::allocator<void> > const&) const [120]
+-----------------------------------------------
+                                                 <spontaneous>
+[12]     0.0    0.00    0.00                 ImageProjection::ImageProjection() [12]
+                0.00    0.00       1/1859        ImageProjection::resetParameters() [5]
+                0.00    0.00       1/1           ImageProjection::allocateMemory() [13]
+                0.00    0.00      16/37163       frame_dummy [14]
+                0.00    0.00       7/7           boost::shared_ptr<ros::Publisher::Impl>::operator=(boost::shared_ptr<ros::Publisher::Impl> const&) [131]
+                0.00    0.00       6/6           ros::Publisher ros::NodeHandle::advertise<sensor_msgs::PointCloud2_<std::allocator<void> > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int, bool) [134]
+                0.00    0.00       2/21          std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::_M_erase(std::_Rb_tree_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >*) [125]
+                0.00    0.00       1/1           ros::Subscriber ros::NodeHandle::subscribe<sensor_msgs::PointCloud2_<std::allocator<void> >, ImageProjection>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int, void (ImageProjection::*)(boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&), ImageProjection*, ros::TransportHints const&) [141]
+                0.00    0.00       1/1           ros::Publisher ros::NodeHandle::advertise<cloud_msgs::cloud_info_<std::allocator<void> > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int, bool) [140]
+-----------------------------------------------
+                0.00    0.00       1/1           ImageProjection::ImageProjection() [12]
+[13]     0.0    0.00    0.00       1         ImageProjection::allocateMemory() [13]
+                0.00    0.00       2/1860        std::vector<pcl::PointXYZI, Eigen::aligned_allocator<pcl::PointXYZI> >::_M_default_append(unsigned long) [8]
+                0.00    0.00       8/8           Eigen::internal::aligned_malloc(unsigned long) [clone .constprop.703] [127]
+                0.00    0.00       7/7           pcl::PointCloud<pcl::PointXYZI>::PointCloud() [128]
+                0.00    0.00       7/7           void boost::shared_ptr<pcl::PointCloud<pcl::PointXYZI> >::reset<pcl::PointCloud<pcl::PointXYZI> >(pcl::PointCloud<pcl::PointXYZI>*) [130]
+                0.00    0.00       3/3           void std::vector<std::pair<signed char, signed char>, std::allocator<std::pair<signed char, signed char> > >::_M_realloc_insert<std::pair<signed char, signed char> const&>(__gnu_cxx::__normal_iterator<std::pair<signed char, signed char>*, std::vector<std::pair<signed char, signed char>, std::allocator<std::pair<signed char, signed char> > > >, std::pair<signed char, signed char> const&) [136]
+                0.00    0.00       2/2           boost::system::error_category::std_category::~std_category() [139]
+-----------------------------------------------
+                0.00    0.00       2/37163       std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::operator=(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&) [147]
+                0.00    0.00      16/37163       ImageProjection::ImageProjection() [12]
+                0.00    0.00    3714/37163       void pcl::toPCLPointCloud2<pcl::PointXYZI>(pcl::PointCloud<pcl::PointXYZI> const&, pcl::PCLPointCloud2&) [9]
+                0.00    0.00    3716/37163       void ros::Publisher::publish<cloud_msgs::cloud_info_<std::allocator<void> > >(cloud_msgs::cloud_info_<std::allocator<void> > const&) const [120]
+                0.00    0.00    7426/37163       void ros::Publisher::publish<sensor_msgs::PointCloud2_<std::allocator<void> > >(sensor_msgs::PointCloud2_<std::allocator<void> > const&) const [110]
+                0.00    0.00   11141/37163       void std::vector<pcl::PCLPointField, std::allocator<pcl::PCLPointField> >::_M_realloc_insert<pcl::PCLPointField const&>(__gnu_cxx::__normal_iterator<pcl::PCLPointField*, std::vector<pcl::PCLPointField, std::allocator<pcl::PCLPointField> > >, pcl::PCLPointField const&) [100]
+                0.00    0.00   11148/37163       ros::SubscriptionCallbackHelperT<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&, void>::deserialize(ros::SubscriptionCallbackHelperDeserializeParams const&) [156]
+[14]     0.0    0.00    0.00   37163         frame_dummy [14]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [294]
+[15]     0.0    0.00    0.00       1         main [15]
+-----------------------------------------------
+                0.00    0.00   26787/26787       boost::detail::sp_counted_base::release() [96]
+[95]     0.0    0.00    0.00   26787         boost::detail::sp_counted_impl_pd<unsigned char*, boost::checked_array_deleter<unsigned char> >::dispose() [95]
+-----------------------------------------------
+                0.00    0.00       1/20445       ros::SubscribeOptions::~SubscribeOptions() [155]
+                0.00    0.00       1/20445       boost::detail::sp_if_not_array<ros::SubscriptionCallbackHelperT<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&, void> >::type boost::make_shared<ros::SubscriptionCallbackHelperT<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&, void>, boost::function<void (boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&)> const&, boost::function<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > > ()> const&>(boost::function<void (boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&)> const&, boost::function<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > > ()> const&) [143]
+                0.00    0.00       1/20445       ros::Subscriber ros::NodeHandle::subscribe<sensor_msgs::PointCloud2_<std::allocator<void> >, ImageProjection>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int, void (ImageProjection::*)(boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&), ImageProjection*, ros::TransportHints const&) [141]
+                0.00    0.00       8/20445       ImageProjection::~ImageProjection() [149]
+                0.00    0.00    1858/20445       boost::detail::function::function_obj_invoker0<ros::DefaultMessageCreator<sensor_msgs::PointCloud2_<std::allocator<void> > >, boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > > >::invoke(boost::detail::function::function_buffer&) [118]
+                0.00    0.00    1858/20445       void ros::Publisher::publish<cloud_msgs::cloud_info_<std::allocator<void> > >(cloud_msgs::cloud_info_<std::allocator<void> > const&) const [120]
+                0.00    0.00    3716/20445       void ros::Publisher::publish<sensor_msgs::PointCloud2_<std::allocator<void> > >(sensor_msgs::PointCloud2_<std::allocator<void> > const&) const [110]
+                0.00    0.00    5574/20445       ros::SubscriptionCallbackHelperT<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&, void>::deserialize(ros::SubscriptionCallbackHelperDeserializeParams const&) [156]
+                0.00    0.00    7428/20445       ros::SubscriptionCallbackHelperT<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&, void>::call(ros::SubscriptionCallbackHelperCallParams&) [3]
+[96]     0.0    0.00    0.00   20445         boost::detail::sp_counted_base::release() [96]
+                0.00    0.00   26787/26787       boost::detail::sp_counted_impl_pd<unsigned char*, boost::checked_array_deleter<unsigned char> >::dispose() [95]
+                0.00    0.00    1858/1858        boost::detail::sp_counted_impl_pd<sensor_msgs::PointCloud2_<std::allocator<void> >*, boost::detail::sp_ms_deleter<sensor_msgs::PointCloud2_<std::allocator<void> > > >::dispose() [117]
+                0.00    0.00       7/7           boost::detail::sp_counted_impl_p<pcl::PointCloud<pcl::PointXYZI> >::dispose() [132]
+                0.00    0.00       1/1           boost::detail::sp_counted_impl_p<pcl::PointCloud<PointXYZIR> >::dispose() [144]
+-----------------------------------------------
+                0.00    0.00    7427/16717       void pcl::createMapping<pcl::PointXYZI>(std::vector<pcl::PCLPointField, std::allocator<pcl::PCLPointField> > const&, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> >&) [115]
+                0.00    0.00    9290/16717       void pcl::createMapping<PointXYZIR>(std::vector<pcl::PCLPointField, std::allocator<pcl::PCLPointField> > const&, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> >&) [114]
+[97]     0.0    0.00    0.00   16717         std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> >::push_back(pcl::detail::FieldMapping const&) [97]
+-----------------------------------------------
+                0.00    0.00   13006/13006       void std::__insertion_sort<__gnu_cxx::__normal_iterator<pcl::detail::FieldMapping*, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> > >, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(pcl::detail::FieldMapping const&, pcl::detail::FieldMapping const&)> >(__gnu_cxx::__normal_iterator<pcl::detail::FieldMapping*, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> > >, __gnu_cxx::__normal_iterator<pcl::detail::FieldMapping*, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> > >, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(pcl::detail::FieldMapping const&, pcl::detail::FieldMapping const&)>) [clone .constprop.698] [113]
+[98]     0.0    0.00    0.00   13006         pcl::detail::fieldOrdering(pcl::detail::FieldMapping const&, pcl::detail::FieldMapping const&) [98]
+-----------------------------------------------
+                0.00    0.00    5568/13000       void pcl::createMapping<pcl::PointXYZI>(std::vector<pcl::PCLPointField, std::allocator<pcl::PCLPointField> > const&, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> >&) [115]
+                0.00    0.00    7432/13000       void pcl::createMapping<PointXYZIR>(std::vector<pcl::PCLPointField, std::allocator<pcl::PCLPointField> > const&, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> >&) [114]
+[99]     0.0    0.00    0.00   13000         void std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> >::_M_realloc_insert<pcl::detail::FieldMapping const&>(__gnu_cxx::__normal_iterator<pcl::detail::FieldMapping*, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> > >, pcl::detail::FieldMapping const&) [99]
+-----------------------------------------------
+                0.00    0.00   11143/11143       void pcl::toPCLPointCloud2<pcl::PointXYZI>(pcl::PointCloud<pcl::PointXYZI> const&, pcl::PCLPointCloud2&) [9]
+[100]    0.0    0.00    0.00   11143         void std::vector<pcl::PCLPointField, std::allocator<pcl::PCLPointField> >::_M_realloc_insert<pcl::PCLPointField const&>(__gnu_cxx::__normal_iterator<pcl::PCLPointField*, std::vector<pcl::PCLPointField, std::allocator<pcl::PCLPointField> > >, pcl::PCLPointField const&) [100]
+                0.00    0.00   11141/37163       frame_dummy [14]
+-----------------------------------------------
+                0.00    0.00    1857/5573        void ros::Publisher::publish<cloud_msgs::cloud_info_<std::allocator<void> > >(cloud_msgs::cloud_info_<std::allocator<void> > const&) const [120]
+                0.00    0.00    3716/5573        void ros::Publisher::publish<sensor_msgs::PointCloud2_<std::allocator<void> > >(sensor_msgs::PointCloud2_<std::allocator<void> > const&) const [110]
+[101]    0.0    0.00    0.00    5573         ros::SerializedMessage::~SerializedMessage() [101]
+-----------------------------------------------
+                0.00    0.00       2/5573        ros::Subscriber ros::NodeHandle::subscribe<sensor_msgs::PointCloud2_<std::allocator<void> >, ImageProjection>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int, void (ImageProjection::*)(boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&), ImageProjection*, ros::TransportHints const&) [141]
+                0.00    0.00    1858/5573        void ros::Publisher::publish<cloud_msgs::cloud_info_<std::allocator<void> > >(cloud_msgs::cloud_info_<std::allocator<void> > const&) const [120]
+                0.00    0.00    3713/5573        void ros::Publisher::publish<sensor_msgs::PointCloud2_<std::allocator<void> > >(sensor_msgs::PointCloud2_<std::allocator<void> > const&) const [110]
+[102]    0.0    0.00    0.00    5573         boost::detail::function::has_empty_target(...) [102]
+-----------------------------------------------
+                0.00    0.00    5570/5570        ros::SubscriptionCallbackHelperT<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&, void>::call(ros::SubscriptionCallbackHelperCallParams&) [3]
+[103]    0.0    0.00    0.00    5570         boost::function0<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > > >::move_assign(boost::function0<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > > >&) [103]
+-----------------------------------------------
+                0.00    0.00       3/5544        ImageProjection::~ImageProjection() [149]
+                0.00    0.00    5541/5544        ImageProjection::resetParameters() [5]
+[104]    0.0    0.00    0.00    5544         cv::Mat::~Mat() [104]
+-----------------------------------------------
+                0.00    0.00    5544/5544        ImageProjection::resetParameters() [5]
+[105]    0.0    0.00    0.00    5544         cv::Mat::operator=(cv::Mat&&) [105]
+-----------------------------------------------
+                0.00    0.00    3716/3716        boost::detail::function::function_obj_invoker0<boost::_bi::bind_t<ros::SerializedMessage, ros::SerializedMessage (*)(sensor_msgs::PointCloud2_<std::allocator<void> > const&), boost::_bi::list1<boost::reference_wrapper<sensor_msgs::PointCloud2_<std::allocator<void> > const> > >, ros::SerializedMessage>::invoke(boost::detail::function::function_buffer&) [231]
+[106]    0.0    0.00    0.00    3716         ros::SerializedMessage ros::serialization::serializeMessage<sensor_msgs::PointCloud2_<std::allocator<void> > >(sensor_msgs::PointCloud2_<std::allocator<void> > const&) [106]
+-----------------------------------------------
+                0.00    0.00    1858/3716        void pcl::fromROSMsg<pcl::PointXYZI>(sensor_msgs::PointCloud2_<std::allocator<void> > const&, pcl::PointCloud<pcl::PointXYZI>&) [4]
+                0.00    0.00    1858/3716        void pcl::fromROSMsg<PointXYZIR>(sensor_msgs::PointCloud2_<std::allocator<void> > const&, pcl::PointCloud<PointXYZIR>&) [6]
+[107]    0.0    0.00    0.00    3716         std::vector<pcl::PCLPointField, std::allocator<pcl::PCLPointField> >::_M_default_append(unsigned long) [107]
+-----------------------------------------------
+                0.00    0.00    3716/3716        void pcl::toPCLPointCloud2<pcl::PointXYZI>(pcl::PointCloud<pcl::PointXYZI> const&, pcl::PCLPointCloud2&) [9]
+[108]    0.0    0.00    0.00    3716         std::vector<unsigned char, std::allocator<unsigned char> >::_M_default_append(unsigned long) [108]
+-----------------------------------------------
+                0.00    0.00    1858/3716        void pcl::createMapping<pcl::PointXYZI>(std::vector<pcl::PCLPointField, std::allocator<pcl::PCLPointField> > const&, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> >&) [115]
+                0.00    0.00    1858/3716        void pcl::createMapping<PointXYZIR>(std::vector<pcl::PCLPointField, std::allocator<pcl::PCLPointField> > const&, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> >&) [114]
+[109]    0.0    0.00    0.00    3716         void std::__introsort_loop<__gnu_cxx::__normal_iterator<pcl::detail::FieldMapping*, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(pcl::detail::FieldMapping const&, pcl::detail::FieldMapping const&)> >(__gnu_cxx::__normal_iterator<pcl::detail::FieldMapping*, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> > >, __gnu_cxx::__normal_iterator<pcl::detail::FieldMapping*, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(pcl::detail::FieldMapping const&, pcl::detail::FieldMapping const&)>) [clone .constprop.693] [109]
+-----------------------------------------------
+                0.00    0.00    3715/3715        ImageProjection::publishCloud() [11]
+[110]    0.0    0.00    0.00    3715         void ros::Publisher::publish<sensor_msgs::PointCloud2_<std::allocator<void> > >(sensor_msgs::PointCloud2_<std::allocator<void> > const&) const [110]
+                0.00    0.00    7426/37163       frame_dummy [14]
+                0.00    0.00    3716/20445       boost::detail::sp_counted_base::release() [96]
+                0.00    0.00    3716/5573        ros::SerializedMessage::~SerializedMessage() [101]
+                0.00    0.00    3713/5573        boost::detail::function::has_empty_target(...) [102]
+                0.00    0.00       1/2           boost::detail::sp_counted_impl_pd<unsigned char*, boost::checked_array_deleter<unsigned char> >::~sp_counted_impl_pd() [138]
+-----------------------------------------------
+                0.00    0.00    1857/3715        void pcl::toROSMsg<pcl::PointXYZI>(pcl::PointCloud<pcl::PointXYZI> const&, sensor_msgs::PointCloud2_<std::allocator<void> >&) [10]
+                0.00    0.00    1858/3715        ros::SubscriptionCallbackHelperT<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&, void>::deserialize(ros::SubscriptionCallbackHelperDeserializeParams const&) [156]
+[111]    0.0    0.00    0.00    3715         std::vector<sensor_msgs::PointField_<std::allocator<void> >, std::allocator<sensor_msgs::PointField_<std::allocator<void> > > >::_M_default_append(unsigned long) [111]
+-----------------------------------------------
+                0.00    0.00    1857/3715        void pcl::fromROSMsg<PointXYZIR>(sensor_msgs::PointCloud2_<std::allocator<void> > const&, pcl::PointCloud<PointXYZIR>&) [6]
+                0.00    0.00    1858/3715        void pcl::fromROSMsg<pcl::PointXYZI>(sensor_msgs::PointCloud2_<std::allocator<void> > const&, pcl::PointCloud<pcl::PointXYZI>&) [4]
+[112]    0.0    0.00    0.00    3715         std::vector<unsigned char, std::allocator<unsigned char> >::operator=(std::vector<unsigned char, std::allocator<unsigned char> > const&) [112]
+-----------------------------------------------
+                0.00    0.00    1857/3715        void pcl::createMapping<pcl::PointXYZI>(std::vector<pcl::PCLPointField, std::allocator<pcl::PCLPointField> > const&, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> >&) [115]
+                0.00    0.00    1858/3715        void pcl::createMapping<PointXYZIR>(std::vector<pcl::PCLPointField, std::allocator<pcl::PCLPointField> > const&, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> >&) [114]
+[113]    0.0    0.00    0.00    3715         void std::__insertion_sort<__gnu_cxx::__normal_iterator<pcl::detail::FieldMapping*, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> > >, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(pcl::detail::FieldMapping const&, pcl::detail::FieldMapping const&)> >(__gnu_cxx::__normal_iterator<pcl::detail::FieldMapping*, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> > >, __gnu_cxx::__normal_iterator<pcl::detail::FieldMapping*, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> > >, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(pcl::detail::FieldMapping const&, pcl::detail::FieldMapping const&)>) [clone .constprop.698] [113]
+                0.00    0.00   13006/13006       pcl::detail::fieldOrdering(pcl::detail::FieldMapping const&, pcl::detail::FieldMapping const&) [98]
+-----------------------------------------------
+                0.00    0.00    1858/1858        void pcl::fromROSMsg<PointXYZIR>(sensor_msgs::PointCloud2_<std::allocator<void> > const&, pcl::PointCloud<PointXYZIR>&) [6]
+[114]    0.0    0.00    0.00    1858         void pcl::createMapping<PointXYZIR>(std::vector<pcl::PCLPointField, std::allocator<pcl::PCLPointField> > const&, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> >&) [114]
+                0.00    0.00    9290/16717       std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> >::push_back(pcl::detail::FieldMapping const&) [97]
+                0.00    0.00    7432/13000       void std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> >::_M_realloc_insert<pcl::detail::FieldMapping const&>(__gnu_cxx::__normal_iterator<pcl::detail::FieldMapping*, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> > >, pcl::detail::FieldMapping const&) [99]
+                0.00    0.00    1858/3716        void std::__introsort_loop<__gnu_cxx::__normal_iterator<pcl::detail::FieldMapping*, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(pcl::detail::FieldMapping const&, pcl::detail::FieldMapping const&)> >(__gnu_cxx::__normal_iterator<pcl::detail::FieldMapping*, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> > >, __gnu_cxx::__normal_iterator<pcl::detail::FieldMapping*, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(pcl::detail::FieldMapping const&, pcl::detail::FieldMapping const&)>) [clone .constprop.693] [109]
+                0.00    0.00    1858/3715        void std::__insertion_sort<__gnu_cxx::__normal_iterator<pcl::detail::FieldMapping*, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> > >, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(pcl::detail::FieldMapping const&, pcl::detail::FieldMapping const&)> >(__gnu_cxx::__normal_iterator<pcl::detail::FieldMapping*, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> > >, __gnu_cxx::__normal_iterator<pcl::detail::FieldMapping*, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> > >, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(pcl::detail::FieldMapping const&, pcl::detail::FieldMapping const&)>) [clone .constprop.698] [113]
+-----------------------------------------------
+                0.00    0.00    1858/1858        void pcl::fromROSMsg<pcl::PointXYZI>(sensor_msgs::PointCloud2_<std::allocator<void> > const&, pcl::PointCloud<pcl::PointXYZI>&) [4]
+[115]    0.0    0.00    0.00    1858         void pcl::createMapping<pcl::PointXYZI>(std::vector<pcl::PCLPointField, std::allocator<pcl::PCLPointField> > const&, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> >&) [115]
+                0.00    0.00    7427/16717       std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> >::push_back(pcl::detail::FieldMapping const&) [97]
+                0.00    0.00    5568/13000       void std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> >::_M_realloc_insert<pcl::detail::FieldMapping const&>(__gnu_cxx::__normal_iterator<pcl::detail::FieldMapping*, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> > >, pcl::detail::FieldMapping const&) [99]
+                0.00    0.00    1858/3716        void std::__introsort_loop<__gnu_cxx::__normal_iterator<pcl::detail::FieldMapping*, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(pcl::detail::FieldMapping const&, pcl::detail::FieldMapping const&)> >(__gnu_cxx::__normal_iterator<pcl::detail::FieldMapping*, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> > >, __gnu_cxx::__normal_iterator<pcl::detail::FieldMapping*, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(pcl::detail::FieldMapping const&, pcl::detail::FieldMapping const&)>) [clone .constprop.693] [109]
+                0.00    0.00    1857/3715        void std::__insertion_sort<__gnu_cxx::__normal_iterator<pcl::detail::FieldMapping*, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> > >, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(pcl::detail::FieldMapping const&, pcl::detail::FieldMapping const&)> >(__gnu_cxx::__normal_iterator<pcl::detail::FieldMapping*, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> > >, __gnu_cxx::__normal_iterator<pcl::detail::FieldMapping*, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> > >, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(pcl::detail::FieldMapping const&, pcl::detail::FieldMapping const&)>) [clone .constprop.698] [113]
+-----------------------------------------------
+                0.00    0.00    1858/1858        boost::detail::function::function_obj_invoker0<ros::DefaultMessageCreator<sensor_msgs::PointCloud2_<std::allocator<void> > >, boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > > >::invoke(boost::detail::function::function_buffer&) [118]
+[116]    0.0    0.00    0.00    1858         boost::detail::sp_counted_impl_pd<sensor_msgs::PointCloud2_<std::allocator<void> >*, boost::detail::sp_ms_deleter<sensor_msgs::PointCloud2_<std::allocator<void> > > >::get_untyped_deleter() [116]
+-----------------------------------------------
+                0.00    0.00    1858/1858        boost::detail::sp_counted_base::release() [96]
+[117]    0.0    0.00    0.00    1858         boost::detail::sp_counted_impl_pd<sensor_msgs::PointCloud2_<std::allocator<void> >*, boost::detail::sp_ms_deleter<sensor_msgs::PointCloud2_<std::allocator<void> > > >::dispose() [117]
+-----------------------------------------------
+                0.00    0.00    1858/1858        ros::SubscriptionCallbackHelperT<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&, void>::deserialize(ros::SubscriptionCallbackHelperDeserializeParams const&) [156]
+[118]    0.0    0.00    0.00    1858         boost::detail::function::function_obj_invoker0<ros::DefaultMessageCreator<sensor_msgs::PointCloud2_<std::allocator<void> > >, boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > > >::invoke(boost::detail::function::function_buffer&) [118]
+                0.00    0.00    1858/1858        boost::detail::sp_counted_impl_pd<sensor_msgs::PointCloud2_<std::allocator<void> >*, boost::detail::sp_ms_deleter<sensor_msgs::PointCloud2_<std::allocator<void> > > >::get_untyped_deleter() [116]
+                0.00    0.00    1858/20445       boost::detail::sp_counted_base::release() [96]
+-----------------------------------------------
+                0.00    0.00    1858/1858        boost::detail::function::void_function_obj_invoker1<boost::function<void (boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&)>, void, boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> >::invoke(boost::detail::function::function_buffer&, boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const>) [2]
+[119]    0.0    0.00    0.00    1858         boost::detail::function::void_function_obj_invoker1<boost::_bi::bind_t<void, boost::_mfi::mf1<void, ImageProjection, boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&>, boost::_bi::list2<boost::_bi::value<ImageProjection*>, boost::arg<1> > >, void, boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&>::invoke(boost::detail::function::function_buffer&, boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&) [119]
+-----------------------------------------------
+                0.00    0.00    1858/1858        ImageProjection::publishCloud() [11]
+[120]    0.0    0.00    0.00    1858         void ros::Publisher::publish<cloud_msgs::cloud_info_<std::allocator<void> > >(cloud_msgs::cloud_info_<std::allocator<void> > const&) const [120]
+                0.00    0.00    3716/37163       frame_dummy [14]
+                0.00    0.00    1858/5573        boost::detail::function::has_empty_target(...) [102]
+                0.00    0.00    1858/20445       boost::detail::sp_counted_base::release() [96]
+                0.00    0.00    1857/5573        ros::SerializedMessage::~SerializedMessage() [101]
+                0.00    0.00       1/2           boost::detail::sp_counted_impl_pd<unsigned char*, boost::checked_array_deleter<unsigned char> >::~sp_counted_impl_pd() [138]
+-----------------------------------------------
+                0.00    0.00    1857/1857        boost::detail::function::function_obj_invoker0<boost::_bi::bind_t<ros::SerializedMessage, ros::SerializedMessage (*)(cloud_msgs::cloud_info_<std::allocator<void> > const&), boost::_bi::list1<boost::reference_wrapper<cloud_msgs::cloud_info_<std::allocator<void> > const> > >, ros::SerializedMessage>::invoke(boost::detail::function::function_buffer&) [230]
+[121]    0.0    0.00    0.00    1857         ros::SerializedMessage ros::serialization::serializeMessage<cloud_msgs::cloud_info_<std::allocator<void> > >(cloud_msgs::cloud_info_<std::allocator<void> > const&) [121]
+-----------------------------------------------
+                0.00    0.00     913/913         void pcl::fromPCLPointCloud2<PointXYZIR>(pcl::PCLPointCloud2 const&, pcl::PointCloud<PointXYZIR>&, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> > const&) [7]
+[122]    0.0    0.00    0.00     913         std::vector<PointXYZIR, Eigen::aligned_allocator<PointXYZIR> >::_M_default_append(unsigned long) [122]
+-----------------------------------------------
+                0.00    0.00      42/42          boost::function<void (ros::SingleSubscriberPublisher const&)>::operator=(boost::function<void (ros::SingleSubscriberPublisher const&)> const&) [126]
+[123]    0.0    0.00    0.00      42         boost::function1<void, ros::SingleSubscriberPublisher const&>::move_assign(boost::function1<void, ros::SingleSubscriberPublisher const&>&) [123]
+-----------------------------------------------
+                0.00    0.00      27/27          ImageProjection::cloudHandler(boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&) [1]
+[124]    0.0    0.00    0.00      27         void std::vector<pcl::PointXYZI, Eigen::aligned_allocator<pcl::PointXYZI> >::_M_realloc_insert<pcl::PointXYZI const&>(__gnu_cxx::__normal_iterator<pcl::PointXYZI*, std::vector<pcl::PointXYZI, Eigen::aligned_allocator<pcl::PointXYZI> > >, pcl::PointXYZI const&) [124]
+-----------------------------------------------
+                                  68             std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::_M_erase(std::_Rb_tree_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >*) [125]
+                0.00    0.00       1/21          ros::SubscribeOptions::~SubscribeOptions() [155]
+                0.00    0.00       1/21          ros::Subscriber ros::NodeHandle::subscribe<sensor_msgs::PointCloud2_<std::allocator<void> >, ImageProjection>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int, void (ImageProjection::*)(boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&), ImageProjection*, ros::TransportHints const&) [141]
+                0.00    0.00       2/21          ImageProjection::ImageProjection() [12]
+                0.00    0.00      17/21          std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::operator=(std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&) [148]
+[125]    0.0    0.00    0.00      21+68      std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::_M_erase(std::_Rb_tree_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >*) [125]
+                                  68             std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::_M_erase(std::_Rb_tree_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >*) [125]
+-----------------------------------------------
+                0.00    0.00       2/14          ros::Publisher ros::NodeHandle::advertise<cloud_msgs::cloud_info_<std::allocator<void> > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int, bool) [140]
+                0.00    0.00      12/14          ros::Publisher ros::NodeHandle::advertise<sensor_msgs::PointCloud2_<std::allocator<void> > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int, bool) [134]
+[126]    0.0    0.00    0.00      14         boost::function<void (ros::SingleSubscriberPublisher const&)>::operator=(boost::function<void (ros::SingleSubscriberPublisher const&)> const&) [126]
+                0.00    0.00      42/42          boost::function1<void, ros::SingleSubscriberPublisher const&>::move_assign(boost::function1<void, ros::SingleSubscriberPublisher const&>&) [123]
+-----------------------------------------------
+                0.00    0.00       8/8           ImageProjection::allocateMemory() [13]
+[127]    0.0    0.00    0.00       8         Eigen::internal::aligned_malloc(unsigned long) [clone .constprop.703] [127]
+-----------------------------------------------
+                0.00    0.00       7/7           ImageProjection::allocateMemory() [13]
+[128]    0.0    0.00    0.00       7         pcl::PointCloud<pcl::PointXYZI>::PointCloud() [128]
+-----------------------------------------------
+                0.00    0.00       1/7           ros::Publisher ros::NodeHandle::advertise<cloud_msgs::cloud_info_<std::allocator<void> > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int, bool) [140]
+                0.00    0.00       6/7           ros::Publisher ros::NodeHandle::advertise<sensor_msgs::PointCloud2_<std::allocator<void> > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int, bool) [134]
+[129]    0.0    0.00    0.00       7         ros::AdvertiseOptions::~AdvertiseOptions() [129]
+-----------------------------------------------
+                0.00    0.00       7/7           ImageProjection::allocateMemory() [13]
+[130]    0.0    0.00    0.00       7         void boost::shared_ptr<pcl::PointCloud<pcl::PointXYZI> >::reset<pcl::PointCloud<pcl::PointXYZI> >(pcl::PointCloud<pcl::PointXYZI>*) [130]
+-----------------------------------------------
+                0.00    0.00       7/7           ImageProjection::ImageProjection() [12]
+[131]    0.0    0.00    0.00       7         boost::shared_ptr<ros::Publisher::Impl>::operator=(boost::shared_ptr<ros::Publisher::Impl> const&) [131]
+-----------------------------------------------
+                0.00    0.00       7/7           boost::detail::sp_counted_base::release() [96]
+[132]    0.0    0.00    0.00       7         boost::detail::sp_counted_impl_p<pcl::PointCloud<pcl::PointXYZI> >::dispose() [132]
+-----------------------------------------------
+                0.00    0.00       7/7           ImageProjection::~ImageProjection() [149]
+[133]    0.0    0.00    0.00       7         boost::detail::sp_counted_impl_p<pcl::PointCloud<pcl::PointXYZI> >::~sp_counted_impl_p() [133]
+-----------------------------------------------
+                0.00    0.00       6/6           ImageProjection::ImageProjection() [12]
+[134]    0.0    0.00    0.00       6         ros::Publisher ros::NodeHandle::advertise<sensor_msgs::PointCloud2_<std::allocator<void> > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int, bool) [134]
+                0.00    0.00      12/14          boost::function<void (ros::SingleSubscriberPublisher const&)>::operator=(boost::function<void (ros::SingleSubscriberPublisher const&)> const&) [126]
+                0.00    0.00       6/7           ros::AdvertiseOptions::~AdvertiseOptions() [129]
+-----------------------------------------------
+                0.00    0.00       1/3           boost::detail::sp_counted_impl_pd<ros::SubscriptionCallbackHelperT<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&, void>*, boost::detail::sp_ms_deleter<ros::SubscriptionCallbackHelperT<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&, void> > >::dispose() [219]
+                0.00    0.00       2/3           boost::detail::sp_if_not_array<ros::SubscriptionCallbackHelperT<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&, void> >::type boost::make_shared<ros::SubscriptionCallbackHelperT<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&, void>, boost::function<void (boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&)> const&, boost::function<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > > ()> const&>(boost::function<void (boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&)> const&, boost::function<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > > ()> const&) [143]
+[135]    0.0    0.00    0.00       3         boost::detail::function::functor_manager<boost::function<void (boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&)> >::manage(boost::detail::function::function_buffer const&, boost::detail::function::function_buffer&, boost::detail::function::functor_manager_operation_type) [135]
+-----------------------------------------------
+                0.00    0.00       3/3           ImageProjection::allocateMemory() [13]
+[136]    0.0    0.00    0.00       3         void std::vector<std::pair<signed char, signed char>, std::allocator<std::pair<signed char, signed char> > >::_M_realloc_insert<std::pair<signed char, signed char> const&>(__gnu_cxx::__normal_iterator<std::pair<signed char, signed char>*, std::vector<std::pair<signed char, signed char>, std::allocator<std::pair<signed char, signed char> > > >, std::pair<signed char, signed char> const&) [136]
+-----------------------------------------------
+                0.00    0.00       3/3           std::map<pcl::SacModel, unsigned int, std::less<pcl::SacModel>, std::allocator<std::pair<pcl::SacModel const, unsigned int> > >::~map() [258]
+[137]    0.0    0.00    0.00       3         std::_Rb_tree<pcl::SacModel, std::pair<pcl::SacModel const, unsigned int>, std::_Select1st<std::pair<pcl::SacModel const, unsigned int> >, std::less<pcl::SacModel>, std::allocator<std::pair<pcl::SacModel const, unsigned int> > >::_M_erase(std::_Rb_tree_node<std::pair<pcl::SacModel const, unsigned int> >*) [137]
+-----------------------------------------------
+                0.00    0.00       1/2           void ros::Publisher::publish<cloud_msgs::cloud_info_<std::allocator<void> > >(cloud_msgs::cloud_info_<std::allocator<void> > const&) const [120]
+                0.00    0.00       1/2           void ros::Publisher::publish<sensor_msgs::PointCloud2_<std::allocator<void> > >(sensor_msgs::PointCloud2_<std::allocator<void> > const&) const [110]
+[138]    0.0    0.00    0.00       2         boost::detail::sp_counted_impl_pd<unsigned char*, boost::checked_array_deleter<unsigned char> >::~sp_counted_impl_pd() [138]
+-----------------------------------------------
+                0.00    0.00       2/2           ImageProjection::allocateMemory() [13]
+[139]    0.0    0.00    0.00       2         boost::system::error_category::std_category::~std_category() [139]
+-----------------------------------------------
+                0.00    0.00       1/1           ImageProjection::ImageProjection() [12]
+[140]    0.0    0.00    0.00       1         ros::Publisher ros::NodeHandle::advertise<cloud_msgs::cloud_info_<std::allocator<void> > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int, bool) [140]
+                0.00    0.00       2/14          boost::function<void (ros::SingleSubscriberPublisher const&)>::operator=(boost::function<void (ros::SingleSubscriberPublisher const&)> const&) [126]
+                0.00    0.00       1/7           ros::AdvertiseOptions::~AdvertiseOptions() [129]
+-----------------------------------------------
+                0.00    0.00       1/1           ImageProjection::ImageProjection() [12]
+[141]    0.0    0.00    0.00       1         ros::Subscriber ros::NodeHandle::subscribe<sensor_msgs::PointCloud2_<std::allocator<void> >, ImageProjection>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int, void (ImageProjection::*)(boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&), ImageProjection*, ros::TransportHints const&) [141]
+                0.00    0.00       2/5573        boost::detail::function::has_empty_target(...) [102]
+                0.00    0.00       1/1           boost::detail::sp_if_not_array<ros::SubscriptionCallbackHelperT<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&, void> >::type boost::make_shared<ros::SubscriptionCallbackHelperT<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&, void>, boost::function<void (boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&)> const&, boost::function<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > > ()> const&>(boost::function<void (boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&)> const&, boost::function<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > > ()> const&) [143]
+                0.00    0.00       1/1           std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::operator=(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&) [147]
+                0.00    0.00       1/1           std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::operator=(std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&) [148]
+                0.00    0.00       1/21          std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::_M_erase(std::_Rb_tree_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >*) [125]
+                0.00    0.00       1/20445       boost::detail::sp_counted_base::release() [96]
+-----------------------------------------------
+                0.00    0.00       1/1           boost::detail::sp_counted_impl_pd<ros::SubscriptionCallbackHelperT<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&, void>*, boost::detail::sp_ms_deleter<ros::SubscriptionCallbackHelperT<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&, void> > >::dispose() [219]
+[142]    0.0    0.00    0.00       1         ros::SubscriptionCallbackHelperT<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&, void>::~SubscriptionCallbackHelperT() [142]
+-----------------------------------------------
+                0.00    0.00       1/1           ros::Subscriber ros::NodeHandle::subscribe<sensor_msgs::PointCloud2_<std::allocator<void> >, ImageProjection>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int, void (ImageProjection::*)(boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&), ImageProjection*, ros::TransportHints const&) [141]
+[143]    0.0    0.00    0.00       1         boost::detail::sp_if_not_array<ros::SubscriptionCallbackHelperT<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&, void> >::type boost::make_shared<ros::SubscriptionCallbackHelperT<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&, void>, boost::function<void (boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&)> const&, boost::function<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > > ()> const&>(boost::function<void (boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&)> const&, boost::function<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > > ()> const&) [143]
+                0.00    0.00       2/3           boost::detail::function::functor_manager<boost::function<void (boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&)> >::manage(boost::detail::function::function_buffer const&, boost::detail::function::function_buffer&, boost::detail::function::functor_manager_operation_type) [135]
+                0.00    0.00       1/1           boost::detail::sp_counted_impl_pd<ros::SubscriptionCallbackHelperT<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&, void>*, boost::detail::sp_ms_deleter<ros::SubscriptionCallbackHelperT<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&, void> > >::get_untyped_deleter() [146]
+                0.00    0.00       1/20445       boost::detail::sp_counted_base::release() [96]
+-----------------------------------------------
+                0.00    0.00       1/1           boost::detail::sp_counted_base::release() [96]
+[144]    0.0    0.00    0.00       1         boost::detail::sp_counted_impl_p<pcl::PointCloud<PointXYZIR> >::dispose() [144]
+-----------------------------------------------
+                0.00    0.00       1/1           ImageProjection::~ImageProjection() [149]
+[145]    0.0    0.00    0.00       1         boost::detail::sp_counted_impl_p<pcl::PointCloud<PointXYZIR> >::~sp_counted_impl_p() [145]
+-----------------------------------------------
+                0.00    0.00       1/1           boost::detail::sp_if_not_array<ros::SubscriptionCallbackHelperT<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&, void> >::type boost::make_shared<ros::SubscriptionCallbackHelperT<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&, void>, boost::function<void (boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&)> const&, boost::function<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > > ()> const&>(boost::function<void (boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&)> const&, boost::function<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > > ()> const&) [143]
+[146]    0.0    0.00    0.00       1         boost::detail::sp_counted_impl_pd<ros::SubscriptionCallbackHelperT<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&, void>*, boost::detail::sp_ms_deleter<ros::SubscriptionCallbackHelperT<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&, void> > >::get_untyped_deleter() [146]
+-----------------------------------------------
+                0.00    0.00       1/1           ros::Subscriber ros::NodeHandle::subscribe<sensor_msgs::PointCloud2_<std::allocator<void> >, ImageProjection>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int, void (ImageProjection::*)(boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&), ImageProjection*, ros::TransportHints const&) [141]
+[147]    0.0    0.00    0.00       1         std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::operator=(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&) [147]
+                0.00    0.00       2/37163       frame_dummy [14]
+-----------------------------------------------
+                0.00    0.00       1/1           ros::Subscriber ros::NodeHandle::subscribe<sensor_msgs::PointCloud2_<std::allocator<void> >, ImageProjection>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int, void (ImageProjection::*)(boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&), ImageProjection*, ros::TransportHints const&) [141]
+[148]    0.0    0.00    0.00       1         std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::operator=(std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&) [148]
+                0.00    0.00      17/21          std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::_M_erase(std::_Rb_tree_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >*) [125]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+   [1] ImageProjection::cloudHandler(boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&) [127] Eigen::internal::aligned_malloc(unsigned long) [clone .constprop.703] [120] void ros::Publisher::publish<cloud_msgs::cloud_info_<std::allocator<void> > >(cloud_msgs::cloud_info_<std::allocator<void> > const&) const
+  [11] ImageProjection::publishCloud() [130] void boost::shared_ptr<pcl::PointCloud<pcl::PointXYZI> >::reset<pcl::PointCloud<pcl::PointXYZI> >(pcl::PointCloud<pcl::PointXYZI>*) [110] void ros::Publisher::publish<sensor_msgs::PointCloud2_<std::allocator<void> > >(sensor_msgs::PointCloud2_<std::allocator<void> > const&) const
+  [13] ImageProjection::allocateMemory() [131] boost::shared_ptr<ros::Publisher::Impl>::operator=(boost::shared_ptr<ros::Publisher::Impl> const&) [122] std::vector<PointXYZIR, Eigen::aligned_allocator<PointXYZIR> >::_M_default_append(unsigned long)
+   [5] ImageProjection::resetParameters() [143] boost::detail::sp_if_not_array<ros::SubscriptionCallbackHelperT<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&, void> >::type boost::make_shared<ros::SubscriptionCallbackHelperT<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&, void>, boost::function<void (boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&)> const&, boost::function<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > > ()> const&>(boost::function<void (boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&)> const&, boost::function<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > > ()> const&) [111] std::vector<sensor_msgs::PointField_<std::allocator<void> >, std::allocator<sensor_msgs::PointField_<std::allocator<void> > > >::_M_default_append(unsigned long)
+ [104] cv::Mat::~Mat()        [96] boost::detail::sp_counted_base::release() [107] std::vector<pcl::PCLPointField, std::allocator<pcl::PCLPointField> >::_M_default_append(unsigned long)
+ [105] cv::Mat::operator=(cv::Mat&&) [144] boost::detail::sp_counted_impl_p<pcl::PointCloud<PointXYZIR> >::dispose() [100] void std::vector<pcl::PCLPointField, std::allocator<pcl::PCLPointField> >::_M_realloc_insert<pcl::PCLPointField const&>(__gnu_cxx::__normal_iterator<pcl::PCLPointField*, std::vector<pcl::PCLPointField, std::allocator<pcl::PCLPointField> > >, pcl::PCLPointField const&)
+ [128] pcl::PointCloud<pcl::PointXYZI>::PointCloud() [145] boost::detail::sp_counted_impl_p<pcl::PointCloud<PointXYZIR> >::~sp_counted_impl_p() [99] void std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> >::_M_realloc_insert<pcl::detail::FieldMapping const&>(__gnu_cxx::__normal_iterator<pcl::detail::FieldMapping*, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> > >, pcl::detail::FieldMapping const&)
+   [6] void pcl::fromROSMsg<PointXYZIR>(sensor_msgs::PointCloud2_<std::allocator<void> > const&, pcl::PointCloud<PointXYZIR>&) [132] boost::detail::sp_counted_impl_p<pcl::PointCloud<pcl::PointXYZI> >::dispose() [97] std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> >::push_back(pcl::detail::FieldMapping const&)
+   [4] void pcl::fromROSMsg<pcl::PointXYZI>(sensor_msgs::PointCloud2_<std::allocator<void> > const&, pcl::PointCloud<pcl::PointXYZI>&) [133] boost::detail::sp_counted_impl_p<pcl::PointCloud<pcl::PointXYZI> >::~sp_counted_impl_p() [8] std::vector<pcl::PointXYZI, Eigen::aligned_allocator<pcl::PointXYZI> >::_M_default_append(unsigned long)
+ [114] void pcl::createMapping<PointXYZIR>(std::vector<pcl::PCLPointField, std::allocator<pcl::PCLPointField> > const&, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> >&) [116] boost::detail::sp_counted_impl_pd<sensor_msgs::PointCloud2_<std::allocator<void> >*, boost::detail::sp_ms_deleter<sensor_msgs::PointCloud2_<std::allocator<void> > > >::get_untyped_deleter() [124] void std::vector<pcl::PointXYZI, Eigen::aligned_allocator<pcl::PointXYZI> >::_M_realloc_insert<pcl::PointXYZI const&>(__gnu_cxx::__normal_iterator<pcl::PointXYZI*, std::vector<pcl::PointXYZI, Eigen::aligned_allocator<pcl::PointXYZI> > >, pcl::PointXYZI const&)
+ [115] void pcl::createMapping<pcl::PointXYZI>(std::vector<pcl::PCLPointField, std::allocator<pcl::PCLPointField> > const&, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> >&) [117] boost::detail::sp_counted_impl_pd<sensor_msgs::PointCloud2_<std::allocator<void> >*, boost::detail::sp_ms_deleter<sensor_msgs::PointCloud2_<std::allocator<void> > > >::dispose() [147] std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::operator=(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&)
+   [9] void pcl::toPCLPointCloud2<pcl::PointXYZI>(pcl::PointCloud<pcl::PointXYZI> const&, pcl::PCLPointCloud2&) [146] boost::detail::sp_counted_impl_pd<ros::SubscriptionCallbackHelperT<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&, void>*, boost::detail::sp_ms_deleter<ros::SubscriptionCallbackHelperT<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&, void> > >::get_untyped_deleter() [136] void std::vector<std::pair<signed char, signed char>, std::allocator<std::pair<signed char, signed char> > >::_M_realloc_insert<std::pair<signed char, signed char> const&>(__gnu_cxx::__normal_iterator<std::pair<signed char, signed char>*, std::vector<std::pair<signed char, signed char>, std::allocator<std::pair<signed char, signed char> > > >, std::pair<signed char, signed char> const&)
+   [7] void pcl::fromPCLPointCloud2<PointXYZIR>(pcl::PCLPointCloud2 const&, pcl::PointCloud<PointXYZIR>&, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> > const&) [95] boost::detail::sp_counted_impl_pd<unsigned char*, boost::checked_array_deleter<unsigned char> >::dispose() [108] std::vector<unsigned char, std::allocator<unsigned char> >::_M_default_append(unsigned long)
+  [98] pcl::detail::fieldOrdering(pcl::detail::FieldMapping const&, pcl::detail::FieldMapping const&) [138] boost::detail::sp_counted_impl_pd<unsigned char*, boost::checked_array_deleter<unsigned char> >::~sp_counted_impl_pd() [112] std::vector<unsigned char, std::allocator<unsigned char> >::operator=(std::vector<unsigned char, std::allocator<unsigned char> > const&)
+  [10] void pcl::toROSMsg<pcl::PointXYZI>(pcl::PointCloud<pcl::PointXYZI> const&, sensor_msgs::PointCloud2_<std::allocator<void> >&) [135] boost::detail::function::functor_manager<boost::function<void (boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&)> >::manage(boost::detail::function::function_buffer const&, boost::detail::function::function_buffer&, boost::detail::function::functor_manager_operation_type) [137] std::_Rb_tree<pcl::SacModel, std::pair<pcl::SacModel const, unsigned int>, std::_Select1st<std::pair<pcl::SacModel const, unsigned int> >, std::less<pcl::SacModel>, std::allocator<std::pair<pcl::SacModel const, unsigned int> > >::_M_erase(std::_Rb_tree_node<std::pair<pcl::SacModel const, unsigned int> >*)
+ [140] ros::Publisher ros::NodeHandle::advertise<cloud_msgs::cloud_info_<std::allocator<void> > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int, bool) [102] boost::detail::function::has_empty_target(...) [125] std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::_M_erase(std::_Rb_tree_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >*)
+ [134] ros::Publisher ros::NodeHandle::advertise<sensor_msgs::PointCloud2_<std::allocator<void> > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int, bool) [118] boost::detail::function::function_obj_invoker0<ros::DefaultMessageCreator<sensor_msgs::PointCloud2_<std::allocator<void> > >, boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > > >::invoke(boost::detail::function::function_buffer&) [148] std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::operator=(std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)
+ [141] ros::Subscriber ros::NodeHandle::subscribe<sensor_msgs::PointCloud2_<std::allocator<void> >, ImageProjection>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int, void (ImageProjection::*)(boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&), ImageProjection*, ros::TransportHints const&) [119] boost::detail::function::void_function_obj_invoker1<boost::_bi::bind_t<void, boost::_mfi::mf1<void, ImageProjection, boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&>, boost::_bi::list2<boost::_bi::value<ImageProjection*>, boost::arg<1> > >, void, boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&>::invoke(boost::detail::function::function_buffer&, boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&) [113] void std::__insertion_sort<__gnu_cxx::__normal_iterator<pcl::detail::FieldMapping*, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> > >, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(pcl::detail::FieldMapping const&, pcl::detail::FieldMapping const&)> >(__gnu_cxx::__normal_iterator<pcl::detail::FieldMapping*, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> > >, __gnu_cxx::__normal_iterator<pcl::detail::FieldMapping*, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> > >, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(pcl::detail::FieldMapping const&, pcl::detail::FieldMapping const&)>) [clone .constprop.698]
+ [121] ros::SerializedMessage ros::serialization::serializeMessage<cloud_msgs::cloud_info_<std::allocator<void> > >(cloud_msgs::cloud_info_<std::allocator<void> > const&) [2] boost::detail::function::void_function_obj_invoker1<boost::function<void (boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&)>, void, boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> >::invoke(boost::detail::function::function_buffer&, boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const>) [109] void std::__introsort_loop<__gnu_cxx::__normal_iterator<pcl::detail::FieldMapping*, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(pcl::detail::FieldMapping const&, pcl::detail::FieldMapping const&)> >(__gnu_cxx::__normal_iterator<pcl::detail::FieldMapping*, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> > >, __gnu_cxx::__normal_iterator<pcl::detail::FieldMapping*, std::vector<pcl::detail::FieldMapping, std::allocator<pcl::detail::FieldMapping> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(pcl::detail::FieldMapping const&, pcl::detail::FieldMapping const&)>) [clone .constprop.693]
+ [106] ros::SerializedMessage ros::serialization::serializeMessage<sensor_msgs::PointCloud2_<std::allocator<void> > >(sensor_msgs::PointCloud2_<std::allocator<void> > const&) [139] boost::system::error_category::std_category::~std_category() [14] frame_dummy
+ [129] ros::AdvertiseOptions::~AdvertiseOptions() [126] boost::function<void (ros::SingleSubscriberPublisher const&)>::operator=(boost::function<void (ros::SingleSubscriberPublisher const&)> const&) [15] main
+ [101] ros::SerializedMessage::~SerializedMessage() [103] boost::function0<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > > >::move_assign(boost::function0<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > > >&)
+ [142] ros::SubscriptionCallbackHelperT<boost::shared_ptr<sensor_msgs::PointCloud2_<std::allocator<void> > const> const&, void>::~SubscriptionCallbackHelperT() [123] boost::function1<void, ros::SingleSubscriberPublisher const&>::move_assign(boost::function1<void, ros::SingleSubscriberPublisher const&>&)
